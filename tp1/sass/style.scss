@@ -1,0 +1,25 @@
+/* 
+Theme Name: 4W4-Gabriel
+Theme URI: https://wordpress.org/themes/twentytwenty/
+Author: Gabriel
+Author URI: https://wordpress.org/
+Description: Développer dans le cours 4W4
+Version: 1.0
+Tested up to: 6.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: 4W4-Gabriel
+*/
+
+/* /////////////////// */
+/*
+Les Variables
+*/
+@import "variables/couleurs";
+
+/* 
+Les composants
+*/
+@import "composants/menu";
+@import "composants/carte";

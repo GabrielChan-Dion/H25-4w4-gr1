@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* 
+Theme Name: 4W4-Gabriel
+Theme URI: https://wordpress.org/themes/twentytwenty/
+Author: Gabriel
+Author URI: https://wordpress.org/
+Description: Développer dans le cours 4W4
+Version: 1.0
+Tested up to: 6.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: 4W4-Gabriel
+*/
+/* /////////////////// */
+/*
+Les Variables
+*/
+/* 
+Les composants
+*/
+.menu ul {
+  margin: 0;
+  padding: 0;
+}
+.menu ul li {
+  display: inline-block;
+}
+.menu ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* ///////////
+Le composant .carte
+/////////////*/
+.carte {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+}
+.carte--grande {
+  padding: 40px;
+}
+.carte__image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.carte__contenu {
+  margin-top: 15px;
+}
+.carte__titre {
+  font-size: 24px;
+  color: #333;
+}
+.carte__description {
+  font-size: 16px;
+  color: #666;
+}
+.carte__bouton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.carte__bouton--actif {
+  background-color: #0056b3;
+}
+.carte__bouton:hover {
+  background-color: #0056b3;
+}/*# sourceMappingURL=style.css.map */
