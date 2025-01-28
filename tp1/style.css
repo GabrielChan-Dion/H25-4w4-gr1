@@ -13,6 +13,22 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: 4w4-Gabriel Chan-Dion
 */
 /* /////////////////////
+Base
+//////////////////////// */
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+a:visited {
+  color: rgba(0, 0, 0, 0.4);
+}
+a:focus {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* /////////////////////
 Les Variables
 //////////////////////// */
 /* /////////////////////////
@@ -30,11 +46,20 @@ Les composants
 @media screen and (max-width: 700px) {
   .menu {
     flex-direction: column;
+    gap: 3px 0;
   }
 }
+.menu__li {
+  font-size: 1.2em;
+  padding: 3px;
+  margin-left: 0.5em;
+  display: flex;
+  justify-content: center;
+}
+.menu__li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 .menu__a {
-  color: #333;
-  text-decoration: none;
   padding: 2px 5px;
 }
 
@@ -104,6 +129,10 @@ Le composant .carte
   padding: 0 0.5em;
 }
 
+.hero__titre {
+  font-size: 5em;
+}
+
 /* /////////////////////////
 Layout 
 /////////////////////////// */
@@ -114,23 +143,55 @@ Layout
 
 .hero {
   min-height: 100vh;
-  background-image: url("images/maldives.jpg");
+  background-image: url("images/houses.jpg");
+}
+
+.burger {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .burger {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.chk__burger {
+  display: none;
+}
+
+.chk__burger ~ .entete__nav {
+  display: flex;
 }
 
 .entete {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1em;
 }
 .entete__nav {
   display: flex;
+  justify-content: flex-end;
+  position: static;
   flex-direction: row;
   align-items: center;
-  gap: 0 40px;
+  gap: 0 20px;
   flex-wrap: wrap;
 }
 @media screen and (max-width: 700px) {
   .entete__nav {
+    display: none;
     flex-direction: column;
+    gap: 20px 0;
+    height: 40vh;
+    width: 100vw;
+    padding-bottom: 1em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
   }
 }/*# sourceMappingURL=style.css.map */
