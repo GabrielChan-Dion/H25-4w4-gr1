@@ -1,39 +1,46 @@
 @charset "UTF-8";
-/* 
-Theme Name: 4W4-Gabriel
-Theme URI: https://wordpress.org/themes/twentytwenty/
-Author: Gabriel
-Author URI: https://wordpress.org/
-Description: Développer dans le cours 4W4
+/*
+Theme Name: 4W4 - Gabriel Chan-Dion
+Theme URI: https://referenced.ca
+Author: Gabriel Chan-Dion
+Author URI: https://github.com/eddytuto
+Description: Thème de base développer dans le cadre du cours 4W4
 Version: 1.0
-Tested up to: 6.4
+Tested up to: 6.2
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: 4W4-Gabriel
+Text Domain: 4w4-Gabriel Chan-Dion
 */
-/* /////////////////// */
-/*
+/* /////////////////////
 Les Variables
-*/
-/* 
+//////////////////////// */
+/* /////////////////////////
 Les composants
-*/
-.menu ul {
+/////////////////////////// */
+/* /////////////////////////////////////////// menu principal */
+.menu {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: row;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
-.menu ul li {
-  display: inline-block;
+@media screen and (max-width: 700px) {
+  .menu {
+    flex-direction: column;
+  }
 }
-.menu ul li a {
+.menu__a {
   color: #333;
   text-decoration: none;
+  padding: 2px 5px;
 }
 
-/* ///////////
+/* *******************
 Le composant .carte
-/////////////*/
+********************** */
 .carte {
   border: 1px solid #ddd;
   padding: 20px;
@@ -41,6 +48,9 @@ Le composant .carte
 }
 .carte--grande {
   padding: 40px;
+}
+.carte--petite {
+  padding: 20px;
 }
 .carte__image img {
   max-width: 100%;
@@ -70,4 +80,57 @@ Le composant .carte
 }
 .carte__bouton:hover {
   background-color: #0056b3;
+}
+
+.recherche {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+.recherche__input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.01);
+  height: 1.8rem;
+  font-size: 1.2em;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.recherche__input:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+.recherche__img {
+  flex: 0 0 20px;
+  padding: 0 0.5em;
+}
+
+/* /////////////////////////
+Layout 
+/////////////////////////// */
+.global {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: url("images/maldives.jpg");
+}
+
+.entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.entete__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0 40px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 700px) {
+  .entete__nav {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
