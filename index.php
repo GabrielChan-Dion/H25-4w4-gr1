@@ -10,14 +10,13 @@ Modèle de base de notre thème
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4W4-Voyage</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <?php wp_head(); ?>
 </head>
 <body>
     <header>
         <div class="entete">
             <figure class="entete__logo"> 
-                <img src="" alt="image logo">
+                <img src="http://localhost/4w4/wp-content/themes/tp1/images/arctic.jpg" alt="image logo">
             </figure>
             <label for="chk__burger" class="burger">
                 <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000" width="32" height="32">
