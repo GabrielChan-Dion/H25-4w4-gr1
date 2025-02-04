@@ -16,7 +16,7 @@ Modèle de base de notre thème
     <header>
         <div class="entete">
             <figure class="entete__logo"> 
-                <img src="http://localhost/4w4/wp-content/themes/tp1/images/arctic.jpg" alt="image logo">
+                <img src="http://localhost/4w4/wp-content/themes/tp1/images/logo.png" alt="image logo">
             </figure>
             <label for="chk__burger" class="burger">
                 <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000" width="32" height="32">
