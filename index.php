@@ -73,10 +73,10 @@ Modèle de base de notre thème
                 Inscription
             </button>
             <div class="hero__icone-app">
-                <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000000" width="20" height="20">
-                <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000000" width="20" height="20">
-                <img src="https://s2.svgbox.net/social.svg?ic=paypal&color=000000" width="20" height="20">
-                <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=000000" width="20" height="20">
+                <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000000" width="40" height="40">
+                <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000000" width="40" height="40">
+                <img src="https://s2.svgbox.net/social.svg?ic=paypal&color=000000" width="40" height="40">
+                <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=000000" width="40" height="40">
             </div>
         </div>
     </section>
