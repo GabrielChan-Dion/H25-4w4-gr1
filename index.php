@@ -37,6 +37,12 @@ Modèle de base de notre thème
                         <li class="menu__li">
                             <a  class="menu__a" href="#">Zen</a>
                         </li>
+                        <li class="menu__li">
+                            <a  class="menu__a" href="#">Culture</a>
+                        </li>
+                        <li class="menu__li">
+                            <a  class="menu__a" href="#">Aventure</a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="entete__recherche">

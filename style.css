@@ -129,8 +129,14 @@ Le composant .carte
   padding: 0 0.5em;
 }
 
+.hero {
+  font-size: 1.5em;
+}
 .hero__titre {
   font-size: 5em;
+}
+.hero__description {
+  color: azure;
 }
 
 /* /////////////////////////
@@ -155,6 +161,7 @@ Layout
     position: absolute;
     top: 10px;
     right: 10px;
+    z-index: 99;
   }
 }
 
@@ -162,7 +169,7 @@ Layout
   display: none;
 }
 
-.chk__burger ~ .entete__nav {
+.chk__burger:checked ~ .entete__nav {
   display: flex;
 }
 

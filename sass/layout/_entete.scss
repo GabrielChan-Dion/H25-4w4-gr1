@@ -1,16 +1,17 @@
 .burger{
-    display: none;
-    @media screen and (max-width: $point__rupture){
-        display: block;
-        position: absolute;
+    display : none;
+    @media screen and (max-width:$point__rupture) {
+        display : block;
+        position : absolute;
         top: 10px;
-        right: 10px;
+        right : 10px;
+        z-index: 99;
     }
 }
 .chk__burger{
-    display: none;
+    display : none;
 }
-.chk__burger ~ .entete__nav{
+.chk__burger:checked ~ .entete__nav{
     display: flex;
 }
 
