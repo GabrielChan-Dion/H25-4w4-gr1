@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
 Theme Name: 4W4 - Gabriel Chan-Dion
-Theme URI: https://referenced.ca
+Theme URI: https://gabrielchan-dion.github.io/H25-4w4-gr1/
 Author: Gabriel Chan-Dion
-Author URI: https://github.com/eddytuto
+Author URI: https://github.com/GabrielChan-Dion
 Description: Thème de base développer dans le cadre du cours 4W4
 Version: 1.0
 Tested up to: 6.2
@@ -132,11 +132,34 @@ Le composant .carte
 .hero {
   font-size: 1.5em;
 }
+.hero__contenu {
+  display: flex;
+  flex-direction: column;
+}
 .hero__titre {
   font-size: 5em;
 }
 .hero__description {
-  color: azure;
+  color: rgb(244, 255, 255);
+}
+.hero__icone-app {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  width: 10em;
+  background-color: rgba(240, 255, 255, 0.482);
+  padding: 0.25em;
+  border-radius: 1em;
+}
+.hero__bouton {
+  margin-top: 1em;
+  width: 10em;
+  padding: 0.25em;
+  font-weight: bold;
+}
+.hero__courriel {
+  width: 13em;
+  padding: 0.15em;
 }
 
 /* /////////////////////////
