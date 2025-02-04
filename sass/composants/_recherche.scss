@@ -1,0 +1,22 @@
+.recherche{
+    border: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    &__input{
+        flex: 1;
+        border: none;
+        outline: none;
+        background-color: rgba(0,0,0,0.01);
+        height: 1.8rem;
+        font-size: 1.2em;
+        border-right: 1px solid rgba(0,0,0,0.2);
+        &:hover{
+            background-color: rgba(0,0,0,0.09);
+        }
+    }
+    &__img{
+        flex: 0 0 20px;
+        padding: 0 0.5em;
+        
+    }
+}

@@ -1,14 +1,18 @@
-/* ///////////
+/* *******************
 Le composant .carte
-/////////////*/
+********************** */
 
 .carte {
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 8px;
+    
   
     &--grande {
       padding: 40px;
+    }
+    &--petite {
+      padding: 20px;
     }
   
     &__image img {
