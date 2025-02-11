@@ -20,31 +20,12 @@
             </label>
             <input type="checkbox" id="chk__burger" class="chk__burger">
             <div class="entete__nav">
-                <nav class="entete__menu">
-                    <ul class="menu">
-                        <li class="menu__li">
-                            <a class="menu__a" href="#">Aventure</a>
-                        </li>
-                        <li class="menu__li">
-                            <a class="menu__a" href="#">Sportive</a>
-                        </li>
-                        <li class="menu__li">
-                            <a class="menu__a"  href="#">Culturelle</a>
-                        </li>
-                        <li class="menu__li">
-                            <a  class="menu__a" href="#">Zen</a>
-                        </li>
-                        <li class="menu__li">
-                            <a class="menu__a" href="#">Sportive</a>
-                        </li>
-                        <li class="menu__li">
-                            <a class="menu__a"  href="#">Culturelle</a>
-                        </li>
-                        <li class="menu__li">
-                            <a  class="menu__a" href="#">Zen</a>
-                        </li>
-                    </ul>
-                </nav>
+            <?php wp_nav_menu(array(
+                "menu" => "principale",
+                "container" => "nav",
+                "container_class" => "entete_menu"
+            ));
+            ?>
                 <div class="entete__recherche">
                     <form  class="recherche">
                         <input type="text" class="recherche__input">
