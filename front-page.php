@@ -31,6 +31,9 @@
     <section class="populaire">
         <div class="boiteflex global">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <?php if (in_category("galerie")){
+                the_content();
+            }else { ?>
             <article class="populaire__article">
                     <div class="carte carte--grande">
         <div class="carte__image">
@@ -45,6 +48,7 @@
                 <h2 class="populaire__titre"><?php the_title(); ?></h2>
                 <div class="populaire__contenu"><?php echo wp_trim_words(get_the_content(), 20, "...") ; ?></div>
             </article>
+            <?php }?>
             <?php endwhile; endif; ?>
         </div>
     </section>
