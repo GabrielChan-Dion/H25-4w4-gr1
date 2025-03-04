@@ -7,3 +7,9 @@
     min-height: 100vh;
     background-image: url("images/houses.jpg");
 }
+.boiteflex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
