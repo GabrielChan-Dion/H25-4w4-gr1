@@ -1,12 +1,19 @@
+<?php
+/** 
+ * modèle front-page.php permet d'afficher la page d'accueil
+ * 
+*/
+?>
+
 <?php get_header() ?>
 <h1>front-page.php</h1>
     <section class="hero">
         <div class="hero__contenu global">
             <h1 class="hero__titre">
-                <?php echo bloginfo('name'); ?>
+                <?php  bloginfo('name'); ?>
             </h1>
             <p class="hero__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aspernatur est officiis, mollitia minus asperiores quas libero saepe consequuntur at blanditiis et eligendi, sequi sit quae laboriosam, ex delectus nesciunt.
+            <?php  bloginfo('description'); ?>
             </p>
             <a href="" class="hero__courriel">
                 info@cmaisonneuve.qc.ca
@@ -28,32 +35,18 @@
         </figure>
     </section>
  
+
     <section class="populaire">
         <div class="boiteflex global">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <?php if (in_category("galerie")){
+            <?php if (in_category('galerie')){
                 the_content();
-            }else { ?>
-            <article class="populaire__article">
-                    <div class="carte carte--grande">
-        <div class="carte__image">
-            <img src="voyage.jpg" alt="Image de voyage">
-        </div>
-        <div class="carte__contenu">
-            <h2 class="carte__titre"><?php the_title(); ?></h2>
-            <p class="carte__description"><?php echo wp_trim_words(get_the_content(), 20, "...") ; ?></p>
-            <button class="carte__bouton carte__bouton--actif">Réserver</button>
-        </div>
-        </div>
-                <h2 class="populaire__titre"><?php the_title(); ?></h2>
-                <div class="populaire__contenu"><?php echo wp_trim_words(get_the_content(), 20, "...") ; ?></div>
-            </article>
-            <?php }?>
+            } else { ?>         
+            <?php get_template_part("gabarit/carte"); ?>
+            <?php } ?>
             <?php endwhile; endif; ?>
         </div>
     </section>
-    
-    
     <?php get_footer(); ?>
 </body>
 </html>

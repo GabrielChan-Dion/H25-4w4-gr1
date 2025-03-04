@@ -1,9 +1,22 @@
 <?php
+/**
+ * Pour l'ajout d'options à notre thème
+ */
 function mon_theme_supports() {
+
   add_theme_support('title-tag');
   add_theme_support('menus');
+  add_theme_support('post-thumbnails');
+  add_theme_support('custom-logo', array(
+    'height'      => 150,
+    'width'       => 150,
+    'flex-height' => true,
+    'flex-width'  => true,
+));
+
 }
 add_action( 'after_setup_theme', 'mon_theme_supports' );
+
 
 
 function theme_tp_enqueue_styles() { 
@@ -19,6 +32,8 @@ add_action('wp_enqueue_scripts', 'theme_tp_enqueue_styles');
  * Dans ce cas ci nous filtrons la requête de la page d'accueil
  * @param WP_query  $query la requête principal de WP
  */
+
+
 function modifie_requete_principal( $query ) {
     if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
       $query->set( 'category_name', 'populaire' );
