@@ -9,7 +9,7 @@
         background-color: rgba(0,0,0,0.01);
         height: 1.8rem;
         font-size: 1.2em;
-        border-right: 1px solid rgba(0,0,0,0.2);
+        border-right: 1px solid $couleur__highlight;
         &:hover{
             background-color: rgba(0,0,0,0.09);
         }
@@ -19,4 +19,25 @@
         padding: 0 0.5em;
         
     }
+}
+
+.search{
+    &__main{
+        display: flex;
+        justify-content: center;
+    }
+    &__article{
+        display: flex;
+        border: 1px solid red;
+    }
+    &__titre{
+        border: 1px solid red;
+    }
+    &__contenu{
+        border: 1px solid red;
+    }
+}
+
+.test1{
+    border: 1px solid red;
 }

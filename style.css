@@ -22,7 +22,7 @@ a:hover {
   color: rgba(0, 0, 0, 0.8);
 }
 a:visited {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(182, 212, 198, 0.086);
 }
 a:focus {
   color: rgba(0, 0, 0, 0.5);
@@ -67,10 +67,16 @@ Les composants
 Le composant .carte
 ********************** */
 .carte {
-  border: 1px solid #ddd;
+  border: 2px solid rgb(152, 210, 186);
   padding: 20px;
   border-radius: 8px;
   flex: 1 1 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carte:hover {
+  background-color: #f3f3f3;
 }
 .carte--grande {
   padding: 40px;
@@ -78,16 +84,16 @@ Le composant .carte
 .carte--petite {
   padding: 20px;
 }
-.carte__image img {
-  max-width: 100%;
-  border-radius: 8px;
-}
 .carte__contenu {
   margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .carte__titre {
   font-size: 24px;
   color: #333;
+  border-bottom: 3px solid rgb(152, 210, 186);
 }
 .carte__description {
   font-size: 16px;
@@ -95,17 +101,17 @@ Le composant .carte
 }
 .carte__bouton {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: rgb(152, 210, 186);
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 .carte__bouton--actif {
-  background-color: #0056b3;
+  background-color: #60d09d;
 }
 .carte__bouton:hover {
-  background-color: #0056b3;
+  background-color: #10a4a2;
 }
 
 .recherche {
@@ -120,7 +126,7 @@ Le composant .carte
   background-color: rgba(0, 0, 0, 0.01);
   height: 1.8rem;
   font-size: 1.2em;
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgb(152, 210, 186);
 }
 .recherche__input:hover {
   background-color: rgba(0, 0, 0, 0.09);
@@ -130,7 +136,27 @@ Le composant .carte
   padding: 0 0.5em;
 }
 
+.search__main {
+  display: flex;
+  justify-content: center;
+}
+.search__article {
+  display: flex;
+  border: 1px solid red;
+}
+.search__titre {
+  border: 1px solid red;
+}
+.search__contenu {
+  border: 1px solid red;
+}
+
+.test1 {
+  border: 1px solid red;
+}
+
 .hero {
+  color: rgb(152, 210, 186);
   font-size: 1.5em;
 }
 .hero__contenu {
@@ -141,14 +167,14 @@ Le composant .carte
   font-size: 5em;
 }
 .hero__description {
-  color: rgb(244, 255, 255);
+  color: rgb(152, 210, 186);
 }
 .hero__icone-app {
   margin-top: 1em;
   display: flex;
   justify-content: space-between;
   width: 10em;
-  background-color: rgba(240, 255, 255, 0.482);
+  background-color: rgb(152, 210, 186);
   padding: 0.25em;
   border-radius: 1em;
 }
@@ -157,9 +183,13 @@ Le composant .carte
   width: 10em;
   padding: 0.25em;
   font-weight: bold;
+  font-size: 1em;
+  background-color: rgb(152, 210, 186);
+  border-radius: 0.5em;
+  border: none;
 }
 .hero__courriel {
-  width: 13em;
+  width: 30em;
   padding: 0.15em;
 }
 
@@ -173,14 +203,14 @@ Layout
 
 .hero {
   min-height: 100vh;
-  background-image: url("images/houses.jpg");
+  background-repeat: no-repeat;
 }
 
 .boiteflex {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .burger {
@@ -209,8 +239,12 @@ Layout
   justify-content: space-between;
   align-items: center;
   padding: 0 1em;
+  border-left: 0.5em solid rgb(152, 210, 186);
+  margin-bottom: 1em;
 }
 .entete__nav {
+  border-bottom: 2px solid rgb(152, 210, 186);
+  padding-bottom: 0.5em;
   display: flex;
   justify-content: flex-end;
   position: static;
@@ -232,4 +266,89 @@ Layout
     right: 0;
     background-color: #fff;
   }
+}
+
+/*
+  --------------------------------- Layout du pied de page
+*/
+footer {
+  background-color: rgb(77, 86, 85);
+  color: #ffffff;
+  margin-top: 3em;
+  border-top: 0.5em solid rgb(152, 210, 186);
+}
+
+.piedpage {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.piedpage__s1 {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  gap: 3rem;
+}
+.piedpage__s1__externe {
+  flex: 0 0 20%;
+}
+.piedpage__s1__externe .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.piedpage__s1__adresse {
+  font-size: 1.2em;
+  flex: 0 0 40%;
+  padding-left: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.piedpage__s1__description {
+  padding-left: 0.8em;
+  flex: 1 0 300px;
+  font-size: 1.2em;
+  border-left: 3px solid rgb(152, 210, 186);
+}
+
+.populaire__single {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+}
+.populaire__article__search {
+  height: 30vh;
+  padding: 1em;
+  border-left: 3px solid rgb(152, 210, 186);
+  margin-bottom: 3em;
+}
+.populaire__article__search:hover {
+  background-color: rgb(232, 232, 232);
+}
+.populaire__titre__search {
+  border-bottom: 3px solid rgb(152, 210, 186);
+}
+.populaire__titre__category {
+  padding-bottom: 0.3em;
+  width: 100%;
+  border-bottom: 3px solid rgb(152, 210, 186);
+}
+.populaire__titre__single {
+  border-bottom: 3px solid rgb(152, 210, 186);
+  font-size: 2em;
+  width: 65vw;
+}
+.populaire__contenu__search {
+  padding: 0.3em;
+  margin-bottom: 1em;
+}
+.populaire__contenu__single {
+  padding-left: 1em;
+  font-size: 1.5em;
+  border-left: 3px solid rgb(152, 210, 186);
 }/*# sourceMappingURL=style.css.map */
