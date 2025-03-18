@@ -12,8 +12,8 @@
                 <?php 
                 if (has_post_thumbnail())
                 the_post_thumbnail(); ?>
-                <h2 class="populaire__titre"><?php the_title(); ?></h2>
-                <div class="populaire__contenu"><?php the_content(); ?></div>
+                <h2 class="populaire__titre__single"><?php the_title(); ?></h2>
+                <div class="populaire__contenu__single"><?php the_content(); ?></div>
             </article>
             <?php endwhile; endif; ?>
         </div>

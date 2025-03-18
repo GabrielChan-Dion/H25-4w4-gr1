@@ -334,7 +334,17 @@ footer {
   width: 100%;
   border-bottom: 3px solid rgb(152, 210, 186);
 }
+.populaire__titre__single {
+  border-bottom: 3px solid rgb(152, 210, 186);
+  font-size: 2em;
+  width: 65vw;
+}
 .populaire__contenu__search {
   padding: 0.3em;
   margin-bottom: 1em;
+}
+.populaire__contenu__single {
+  padding-left: 1em;
+  font-size: 1.5em;
+  border-left: 3px solid rgb(152, 210, 186);
 }/*# sourceMappingURL=style.css.map */
