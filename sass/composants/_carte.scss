@@ -3,30 +3,32 @@ Le composant .carte
 ********************** */
 
 .carte {
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     padding: 20px;
     border-radius: 8px;
     flex: 1 1 200px;
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+      background-color: #f3f3f3;
+    }
     &--grande {
       padding: 40px;
     }
     &--petite {
       padding: 20px;
     }
-  
-    &__image img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-  
     &__contenu {
       margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-  
     &__titre {
       font-size: 24px;
       color: #333;
+      border-bottom: 3px solid #aadbb9;
     }
   
     &__description {
@@ -36,18 +38,17 @@ Le composant .carte
   
     &__bouton {
       padding: 10px 20px;
-      background-color: #007bff;
+      background-color: #aadbb9;
       color: #fff;
       border: none;
       border-radius: 4px;
       cursor: pointer;
-  
       &--actif {
-        background-color: #0056b3;
+        background-color: #60d09d;
       }
   
       &:hover {
-        background-color: #0056b3;
+        background-color: #10a4a2;
       }
     }
   }
