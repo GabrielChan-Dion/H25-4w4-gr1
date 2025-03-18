@@ -27,9 +27,12 @@
         padding: 0.25em;
         font-weight: bold;
         font-size: 1em;
+        background-color: rgba(191, 229, 216, 0.847);
+        border-radius: 0.5em;
+        border: none;
     }
     &__courriel{
-        width: 13em;
+        width: 30em;
         padding: 0.15em;
     }
 }

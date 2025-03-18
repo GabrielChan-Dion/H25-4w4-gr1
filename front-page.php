@@ -19,7 +19,10 @@ $hero_background = get_theme_mod('hero_background', 'Default Title');
             <?php  bloginfo('description'); ?>
             </p>
             <a href="" class="hero__courriel">
-                info@cmaisonneuve.qc.ca
+                | info@cmaisonneuve.qc.ca
+                <br>| 3800 Sherbrooke St E, Montreal, Quebec H1X 2A2
+                <br>| Ouvert du Lundi au Vendredi 7 a.m.–10:30 p.m.
+                <br>| (514) 254-7131 
             </a>
             <button class="hero__bouton">
                 Inscription
