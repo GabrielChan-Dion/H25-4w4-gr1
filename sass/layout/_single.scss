@@ -9,7 +9,7 @@
         &__search{
             height: 30vh;
             padding: 1em;
-            border-left: 3px solid rgb(152, 209, 187);
+            border-left: 3px solid $couleur__highlight;
             margin-bottom: 3em;
             &:hover{
                 background-color: rgb(232, 232, 232);
@@ -18,7 +18,12 @@
     }
     &__titre{
         &__search{
-            border-bottom: 3px solid rgb(152, 209, 187);
+            border-bottom: 3px solid $couleur__highlight;
+        }
+        &__category{
+            padding-bottom: 0.3em;
+            width: 100%;
+            border-bottom: 3px solid $couleur__highlight;
         }
     }
     &__contenu{

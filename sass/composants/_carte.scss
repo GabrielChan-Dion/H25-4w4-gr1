@@ -3,7 +3,7 @@ Le composant .carte
 ********************** */
 
 .carte {
-    border: 2px solid #ddd;
+    border: 2px solid $couleur__highlight;
     padding: 20px;
     border-radius: 8px;
     flex: 1 1 200px;
@@ -28,7 +28,7 @@ Le composant .carte
     &__titre {
       font-size: 24px;
       color: #333;
-      border-bottom: 3px solid #aadbb9;
+      border-bottom: 3px solid $couleur__highlight;
     }
   
     &__description {
@@ -38,7 +38,7 @@ Le composant .carte
   
     &__bouton {
       padding: 10px 20px;
-      background-color: #aadbb9;
+      background-color: $couleur__highlight;
       color: #fff;
       border: none;
       border-radius: 4px;

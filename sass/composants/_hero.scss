@@ -1,5 +1,5 @@
 .hero{
-    color: rgb(198, 229, 217);
+    color: $couleur__highlight;
     &__contenu{
         display: flex;
         flex-direction: column;
@@ -10,14 +10,14 @@
        font-size: 5em; 
     }
     &__description{
-        color: rgb(198, 229, 217);
+        color: $couleur__highlight;
     }
     &__icone-app{
         margin-top: 1em;
         display: flex;
         justify-content: space-between;
         width: 10em;
-        background-color:rgba(191, 229, 216, 0.847);
+        background-color:$couleur__highlight;
         padding: 0.25em;
         border-radius: 1em;
     }
@@ -27,7 +27,7 @@
         padding: 0.25em;
         font-weight: bold;
         font-size: 1em;
-        background-color: rgba(191, 229, 216, 0.847);
+        background-color: $couleur__highlight;
         border-radius: 0.5em;
         border: none;
     }

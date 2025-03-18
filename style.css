@@ -67,7 +67,7 @@ Les composants
 Le composant .carte
 ********************** */
 .carte {
-  border: 2px solid #ddd;
+  border: 2px solid rgb(152, 210, 186);
   padding: 20px;
   border-radius: 8px;
   flex: 1 1 200px;
@@ -93,7 +93,7 @@ Le composant .carte
 .carte__titre {
   font-size: 24px;
   color: #333;
-  border-bottom: 3px solid #aadbb9;
+  border-bottom: 3px solid rgb(152, 210, 186);
 }
 .carte__description {
   font-size: 16px;
@@ -101,7 +101,7 @@ Le composant .carte
 }
 .carte__bouton {
   padding: 10px 20px;
-  background-color: #aadbb9;
+  background-color: rgb(152, 210, 186);
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -126,7 +126,7 @@ Le composant .carte
   background-color: rgba(0, 0, 0, 0.01);
   height: 1.8rem;
   font-size: 1.2em;
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgb(152, 210, 186);
 }
 .recherche__input:hover {
   background-color: rgba(0, 0, 0, 0.09);
@@ -156,7 +156,7 @@ Le composant .carte
 }
 
 .hero {
-  color: rgb(198, 229, 217);
+  color: rgb(152, 210, 186);
   font-size: 1.5em;
 }
 .hero__contenu {
@@ -167,14 +167,14 @@ Le composant .carte
   font-size: 5em;
 }
 .hero__description {
-  color: rgb(198, 229, 217);
+  color: rgb(152, 210, 186);
 }
 .hero__icone-app {
   margin-top: 1em;
   display: flex;
   justify-content: space-between;
   width: 10em;
-  background-color: rgba(191, 229, 216, 0.847);
+  background-color: rgb(152, 210, 186);
   padding: 0.25em;
   border-radius: 1em;
 }
@@ -184,7 +184,7 @@ Le composant .carte
   padding: 0.25em;
   font-weight: bold;
   font-size: 1em;
-  background-color: rgba(191, 229, 216, 0.847);
+  background-color: rgb(152, 210, 186);
   border-radius: 0.5em;
   border: none;
 }
@@ -271,7 +271,7 @@ footer {
   background-color: rgb(77, 86, 85);
   color: #ffffff;
   margin-top: 3em;
-  border-top: 0.5em solid rgb(66, 66, 66);
+  border-top: 0.5em solid rgb(152, 210, 186);
 }
 
 .piedpage {
@@ -308,7 +308,7 @@ footer {
   padding-left: 0.8em;
   flex: 1 0 300px;
   font-size: 1.2em;
-  border-left: 3px solid rgb(71, 71, 71);
+  border-left: 3px solid rgb(152, 210, 186);
 }
 
 .populaire__single {
@@ -320,14 +320,19 @@ footer {
 .populaire__article__search {
   height: 30vh;
   padding: 1em;
-  border-left: 3px solid rgb(152, 209, 187);
+  border-left: 3px solid rgb(152, 210, 186);
   margin-bottom: 3em;
 }
 .populaire__article__search:hover {
   background-color: rgb(232, 232, 232);
 }
 .populaire__titre__search {
-  border-bottom: 3px solid rgb(152, 209, 187);
+  border-bottom: 3px solid rgb(152, 210, 186);
+}
+.populaire__titre__category {
+  padding-bottom: 0.3em;
+  width: 100%;
+  border-bottom: 3px solid rgb(152, 210, 186);
 }
 .populaire__contenu__search {
   padding: 0.3em;
