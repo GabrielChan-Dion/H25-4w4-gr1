@@ -22,7 +22,7 @@ a:hover {
   color: rgba(0, 0, 0, 0.8);
 }
 a:visited {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(182, 212, 198, 0.086);
 }
 a:focus {
   color: rgba(0, 0, 0, 0.5);
@@ -137,6 +137,7 @@ Le composant .carte
 }
 
 .hero {
+  color: rgb(198, 229, 217);
   font-size: 1.5em;
 }
 .hero__contenu {
@@ -147,14 +148,14 @@ Le composant .carte
   font-size: 5em;
 }
 .hero__description {
-  color: rgb(244, 255, 255);
+  color: rgb(198, 229, 217);
 }
 .hero__icone-app {
   margin-top: 1em;
   display: flex;
   justify-content: space-between;
   width: 10em;
-  background-color: rgba(240, 255, 255, 0.482);
+  background-color: rgba(191, 229, 216, 0.847);
   padding: 0.25em;
   border-radius: 1em;
 }
@@ -163,6 +164,7 @@ Le composant .carte
   width: 10em;
   padding: 0.25em;
   font-weight: bold;
+  font-size: 1em;
 }
 .hero__courriel {
   width: 13em;
@@ -244,7 +246,7 @@ Layout
   --------------------------------- Layout du pied de page
 */
 footer {
-  background-color: rgb(134, 147, 133);
+  background-color: rgb(77, 86, 85);
   color: #ffffff;
   margin-top: 3em;
   border-top: 0.5em solid rgb(66, 66, 66);
@@ -285,4 +287,11 @@ footer {
   flex: 1 0 300px;
   font-size: 1.2em;
   border-left: 3px solid rgb(71, 71, 71);
+}
+
+.populaire__single {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
 }/*# sourceMappingURL=style.css.map */

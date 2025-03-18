@@ -14,15 +14,23 @@
     
             <div class="piedpage__s1__adresse">
                 <div class="piedpage__s1__adresse__coord">
-                Le Club Voyage Nature vous invite à explorer des destinations sauvages et préservées, pour vivre des aventures authentiques en harmonie avec la nature 
+                | info@cmaisonneuve.qc.ca <br>
+                | 3800 Sherbrooke St E, Montreal, Quebec H1X 2A2<br>| Ouvert du Lundi au Vendredi 	7 a.m.–10:30 p.m.<br>| (514) 254-7131
                 </div>
                 <div class="piedpage__s1__adresse__recherche">
                     <?php get_search_form();   ?>
                 </div>
+                <div class="hero__icone-app">
+                <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000000" width="20" height="20">
+                <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000000" width="20" height="20">
+                <img src="https://s2.svgbox.net/social.svg?ic=paypal&color=000000" width="20" height="20">
+                <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=000000" width="20" height="20">
+            </div>
             </div>
             <div class="piedpage__s1__description">
                 <?php echo $footer_mission; ?>
             </div>
+            
         </section>
         <section class="piedpage__s2"></section>
       

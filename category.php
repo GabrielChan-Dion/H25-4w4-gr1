@@ -5,7 +5,7 @@
  */
 ?>
 <?php get_header() ?>
-
+<h1>Category.php</h1>
     <section class="populaire">
         <div class="boiteflex global">
         <h1><?php single_cat_title(); ?></h1>
