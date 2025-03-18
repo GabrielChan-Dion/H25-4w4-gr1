@@ -136,6 +136,25 @@ Le composant .carte
   padding: 0 0.5em;
 }
 
+.search__main {
+  display: flex;
+  justify-content: center;
+}
+.search__article {
+  display: flex;
+  border: 1px solid red;
+}
+.search__titre {
+  border: 1px solid red;
+}
+.search__contenu {
+  border: 1px solid red;
+}
+
+.test1 {
+  border: 1px solid red;
+}
+
 .hero {
   color: rgb(198, 229, 217);
   font-size: 1.5em;
@@ -297,4 +316,20 @@ footer {
   justify-content: center;
   align-items: center;
   width: 90vw;
+}
+.populaire__article__search {
+  height: 30vh;
+  padding: 1em;
+  border-left: 3px solid rgb(152, 209, 187);
+  margin-bottom: 3em;
+}
+.populaire__article__search:hover {
+  background-color: rgb(232, 232, 232);
+}
+.populaire__titre__search {
+  border-bottom: 3px solid rgb(152, 209, 187);
+}
+.populaire__contenu__search {
+  padding: 0.3em;
+  margin-bottom: 1em;
 }/*# sourceMappingURL=style.css.map */

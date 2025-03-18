@@ -20,3 +20,24 @@
         
     }
 }
+
+.search{
+    &__main{
+        display: flex;
+        justify-content: center;
+    }
+    &__article{
+        display: flex;
+        border: 1px solid red;
+    }
+    &__titre{
+        border: 1px solid red;
+    }
+    &__contenu{
+        border: 1px solid red;
+    }
+}
+
+.test1{
+    border: 1px solid red;
+}
