@@ -5,11 +5,15 @@
 ?>
  <?php 
     $Page404_description = get_theme_mod('Page404_description', 'Default Title'); 
+    $Page404_background = get_theme_mod("Page404_background", 'Default Title');
 ?>
 <?php get_header() ?>
     <section class="page404">
         <div class="page404__div">
-            <H1 class="page404__titre">Erreur 404</H1>
+            <div class="page404__background" style="background-image: url('<?php echo $Page404_background ?>'); background-repeat: no-repeat">
+                <H1 class="page404__titre">Erreur 404</H1>
+            </div>
+        
             <p class="page404__description"> <?php echo $Page404_description?></p>
             <h2 class="page404__titre__secondaire">Vous ne trouvez pas ce que vous chercher?</h2>
             <p class="page404__titre__sousTitre">Essayer à nouveau ou explorer nos autres options!</p>

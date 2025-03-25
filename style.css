@@ -199,6 +199,12 @@ Le composant .carte
   justify-content: center;
   align-items: center;
 }
+.page404__background {
+  display: flex;
+  justify-content: center;
+  width: 75vw;
+  margin-bottom: 2em;
+}
 .page404__recherche {
   width: 50vw;
 }
@@ -212,8 +218,10 @@ Le composant .carte
   display: flex;
   justify-content: center;
   width: 30vw;
-  font-size: 4em;
-  border-bottom: 3px solid rgb(152, 210, 186);
+  font-size: 5em;
+  font-weight: bolder;
+  color: white;
+  border-bottom: 5px solid black;
 }
 .page404__titre__secondaire {
   border-bottom: 3px solid rgb(152, 210, 186);

@@ -6,6 +6,12 @@
         align-items: center;
        
     }
+    &__background{
+        display: flex;
+        justify-content: center;
+        width: 75vw;
+        margin-bottom: 2em;
+    }
     &__recherche{
         width: 50vw;
     }
@@ -19,8 +25,10 @@
         display: flex;
         justify-content: center;
         width: 30vw;
-        font-size: 4em;
-        border-bottom: 3px solid $couleur__highlight;
+        font-size: 5em;
+        font-weight: bolder;
+        color: white;
+        border-bottom: 5px solid black;
         &__secondaire{
             border-bottom: 3px solid $couleur__highlight;
             text-align: center;
