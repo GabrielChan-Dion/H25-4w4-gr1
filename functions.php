@@ -57,8 +57,25 @@ $wp_customize->add_control('footer_mission', array(
   'section' => 'footer_section',
   'type' => 'textarea',
 ));
+//////////////////////////////////////////////////////// Section 404
+$wp_customize->add_section('Page404_section', array(
+  'title' => __('Section 404', 'theme_31w'),
+  'priority' => 30,
+));
+
+$wp_customize->add_setting('Page404_description', array(
+  'default' => __('Description de la page 404', 'theme_31w'),
+  'sanitize_callback' => 'sanitize_text_field'
+));
+
+$wp_customize->add_control('Page404_description', array(
+  'label' => __('Description', 'theme_31w'),
+  'section' => 'Page404_section',
+  'type' => 'textarea',
+));
 
 }
+
 
 add_action('customize_register', 'theme_31w_customize_register');
 

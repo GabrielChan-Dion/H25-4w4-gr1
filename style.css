@@ -193,6 +193,10 @@ Le composant .carte
   padding: 0.15em;
 }
 
+.Page404__section {
+  font-size: 2em;
+}
+
 /* /////////////////////////
 Layout 
 /////////////////////////// */
