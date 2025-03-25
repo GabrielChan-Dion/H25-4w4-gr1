@@ -193,6 +193,68 @@ Le composant .carte
   padding: 0.15em;
 }
 
+.page404__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page404__background {
+  display: flex;
+  justify-content: center;
+  width: 75vw;
+  margin-bottom: 2em;
+}
+.page404__description {
+  width: 65vw;
+  height: 100%;
+  font-size: 1.5em;
+  text-align: center;
+}
+.page404__titre {
+  display: flex;
+  justify-content: center;
+  width: 30vw;
+  font-size: 5em;
+  font-weight: bolder;
+  color: white;
+  border-bottom: 5px solid black;
+}
+.page404__titre__secondaire {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0.5em;
+  width: 50vw;
+  font-size: 2em;
+  border-bottom: 3px solid rgb(152, 210, 186);
+  text-align: center;
+}
+.page404__titre__sousTitre {
+  font-size: 1.2em;
+}
+.page404__iconeapp {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  width: 10em;
+  background-color: rgb(152, 210, 186);
+  padding: 0.25em;
+  border-radius: 1em;
+}
+.page404__recherche {
+  width: 50vw;
+  margin: 1em;
+}
+.page404__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.069);
+  width: 80vw;
+  height: 60vh;
+  padding: 2em;
+}
+
 /* /////////////////////////
 Layout 
 /////////////////////////// */
