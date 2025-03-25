@@ -193,8 +193,26 @@ Le composant .carte
   padding: 0.15em;
 }
 
-.Page404__section {
-  font-size: 2em;
+.page404__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page404__recherche {
+  width: 50vw;
+}
+.page404__description {
+  width: 65vw;
+  height: 100%;
+  font-size: 1.5em;
+}
+.page404__titre {
+  display: flex;
+  justify-content: center;
+  width: 30vw;
+  font-size: 4em;
+  border-bottom: 3px solid rgb(152, 210, 186);
 }
 
 /* /////////////////////////

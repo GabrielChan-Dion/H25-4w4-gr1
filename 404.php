@@ -4,16 +4,17 @@
  */
 ?>
  <?php 
-    $Page404_description = get_theme_mod('404_description', 'Default Title'); 
+    $Page404_description = get_theme_mod('Page404_description', 'Default Title'); 
 ?>
 <?php get_header() ?>
-    <section class="Page404">
-        <div class="Page404_section">
-            <H1 class="Page404_titre">Page 404</H1>
-            <p class="Page404_description">Vous ne trouvez pas ce que vous chercher?</p>
-            <div class="Page404_recherche"><?php get_search_form();?></div>
-           <?php echo $Page404_description?>
-            
+    <section class="page404">
+        <div class="page404__div">
+            <H1 class="page404__titre">Erreur 404</H1>
+            <p class="page404__description"> <?php echo $Page404_description?></p>
+            <h2 class="page404__titre_secondaire">Vous ne trouvez pas ce que vous chercher?</h2>
+            <p>Essayer à nouveau ou explorer nos autres options!</p>
+            <div class="page404__recherche"><?php get_search_form();?></div>
+          
         </div>
     </section>
     <?php get_footer(); ?>
