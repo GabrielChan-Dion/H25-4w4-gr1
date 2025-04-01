@@ -11,11 +11,8 @@
 ?>
 <?php get_header() ?>
     <section class="page404" style="background-image: url('<?php echo $Page404_background ?>'); background-repeat: no-repeat; background-size: cover;" >
-        
                 <H1 class="page404__titre"><?php echo $Page404_title?></H1>
                 <p class="page404__description"> <?php echo $Page404_description?></p>
-                    
-                
                 <nav class="page404__nav">
                     <?php wp_nav_menu(array(
                                 'menu' => 'Page404',
