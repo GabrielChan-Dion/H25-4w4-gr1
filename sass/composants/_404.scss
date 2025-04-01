@@ -1,66 +1,51 @@
 .page404{
-    &__div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-       
-    }
-    &__background{
-        display: flex;
-        justify-content: center;
-        width: 75vw;
-        margin-bottom: 2em;
-    }
-    
-    &__description{
-        width: 65vw;
-        height: 100%;
-        font-size: 1.5em;
-        text-align: center;
-    }
-    &__titre{
-        display: flex;
-        justify-content: center;
-        width: 30vw;
-        font-size: 5em;
-        font-weight: bolder;
-        color: white;
-        border-bottom: 5px solid black;
-        &__secondaire{
-            display: flex;
-            justify-content: center;
-            padding-bottom: 0.5em;
-            width: 50vw;
-            font-size: 2em;
-            border-bottom: 3px solid $couleur__highlight;
-            text-align: center;
-        }
-        &__sousTitre{
-            font-size: 1.2em;
-        }
-    }
-    &__iconeapp{
-        margin-top: 1em;
-        display: flex;
-        justify-content: space-between;
-        width: 10em;
-        background-color:$couleur__highlight;
-        padding: 0.25em;
-        border-radius: 1em;
-    }
-    &__recherche{
-        width: 50vw;
-        margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    &__nav{
+        border-bottom: 3px solid $couleur__highlight;
+        background-color:rgba(0, 0, 0, 0.128);
     }
     &__menu{
+        padding: 0.75em;
+        flex: 1 1 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      list-style-type: none;
+    }
+    &__description{
+        @media screen and (max-width:$point__rupture){
+            font-size: 1em;
+        }
+        padding: 1em;
+        width: 65vw;
+        font-size: 1.5em;
+        text-align: center;
+        background-color:rgba(47, 47, 47, 0.088);
+    }
+    &__titre{
+        @media screen and (max-width:$point__rupture){
+            font-size: 3em;
+        }
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: rgba(0, 0, 0, 0.069);
-        width: 80vw;
-        height: 60vh;
-        padding: 2em;
-        
+        justify-content: center;
+        padding: 0.25em;
+        width: 50vw;
+        font-size: 5em;
+        font-weight: bolder;
+        text-align: center;
+        background-color:rgba(47, 47, 47, 0.088);
+    }
+    &__recherche{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0.25em;
+        width: 25vw;
+        margin: 1em;
+        border-bottom: 3px solid $couleur__highlight;
+        font-size: 1.5em;
     }
 }
