@@ -198,10 +198,10 @@ Le composant .carte
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 .page404__nav {
-  border: 1px solid yellow;
+  border-bottom: 3px solid rgb(152, 210, 186);
 }
 .page404__menu {
   padding: 0.75em;
@@ -221,10 +221,9 @@ Le composant .carte
 }
 .page404__menu-item a {
   padding: 5px 5px;
-  background-color: aqua;
 }
 .page404__menu-item:hover {
-  background-color: rgba(143, 88, 88, 0.854);
+  background-color: rgba(0, 0, 0, 0.156);
 }
 .page404__description {
   padding: 1em;
@@ -233,18 +232,34 @@ Le composant .carte
   text-align: center;
   background-color: rgba(47, 47, 47, 0.088);
 }
+@media screen and (max-width: 700px) {
+  .page404__description {
+    font-size: 1em;
+  }
+}
 .page404__titre {
   display: flex;
   justify-content: center;
+  padding: 0.25em;
   width: 50vw;
   font-size: 5em;
   font-weight: bolder;
   text-align: center;
   background-color: rgba(47, 47, 47, 0.088);
 }
+@media screen and (max-width: 700px) {
+  .page404__titre {
+    font-size: 3em;
+  }
+}
 .page404__recherche {
-  width: 50vw;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0.25em;
+  width: 25vw;
   margin: 1em;
+  border-bottom: 3px solid rgb(152, 210, 186);
+  font-size: 1.5em;
 }
 
 /* /////////////////////////
