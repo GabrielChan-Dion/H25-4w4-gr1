@@ -7,7 +7,7 @@
         <section class="piedpage__s1">
          
                 <?php wp_nav_menu(array(
-                    "menu"=> "externe",
+                    "menu"=> "principal",
                     "container" => "nav",
                     "container_class" => "piedpage__s1__externe"
                 )); ?>
