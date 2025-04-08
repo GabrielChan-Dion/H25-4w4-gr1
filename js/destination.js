@@ -25,11 +25,12 @@
             .then(data => {
                 //  <div>${article.excerpt.rendered}</div>
                 const destinationList = document.querySelector('.destination__list');
+                destinationList.innerHTML = ""
                 data.forEach(article => {
                     const articleElement = document.createElement('div');
                     articleElement.innerHTML = `
                         <h3>${article.title.rendered}</h3>
-                       
+                        <p>${article.excerpt.rendered}</p>
                         <a href="${article.link}">Lire plus</a>
                     `;
                     destinationList .appendChild(articleElement);

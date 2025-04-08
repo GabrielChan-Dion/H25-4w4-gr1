@@ -7,7 +7,7 @@ Ajout de la page 404
 
 Liens:
 
-### Site web WHC: https://naturevoyage.ca/
+### Site web WHC: https://obfzte63.mywhc.ca/voyage/
 Github-page: https://gabrielchan-dion.github.io/H25-4w4-gr1/
 
 Auteur: Gabriel Chan-Dion
