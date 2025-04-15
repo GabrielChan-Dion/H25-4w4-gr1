@@ -1,18 +1,11 @@
-/**
-bouton-categorie.scss ------------------------------ .categorie__ul
-*/
-
-
-.categorie__ul{
+.categorie__ul {
     display : flex;
-    gap: 5px;
+    gap:2rem;
+    flex-wrap: wrap;
     list-style-type: none;
-    flex: wrap;
-&__li{
-    padding: 3px;
-    border: 1px solid #aaa;
-    background-color: aquamarine;
-    cursor: pointer;
-}
-
+    &__li{
+        border: 1px solid #aaa;
+        padding: 3px;
+        cursor: pointer;
+    }
 }

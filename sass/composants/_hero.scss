@@ -1,4 +1,15 @@
 .hero{
+    min-height: 100vh;
+    position : relative;
+    &__carrousel {
+        top:0;
+        left:0;
+        position : absolute;
+        background-repeat: no-repeat ;
+        background-size: cover;
+        min-height : 100vh;
+        width : 100%;
+    }
     color: $couleur__highlight;
     &__contenu{
         display: flex;
