@@ -11,7 +11,9 @@ $hero_background[$k] = get_theme_mod('hero_background_' . $k, 'Default Title');
     <div class="hero__carrousel"  style="background-image: url('<?php echo $hero_background[1] ?>');" ></div> 
     <div class="hero__carrousel"  style="background-image: url('<?php echo $hero_background[2] ?>');" ></div> 
     <div class="hero__radio">
-    <input type="radio" name="" id="">
+        <input class="hero__radio__input" type="radio" name="carrousel" data-id_carrousel="0">
+        <input class="hero__radio__input" type="radio" name="carrousel" data-id_carrousel="1">
+        <input class="hero__radio__input" type="radio" name="carrousel" data-id_carrousel="2">
     </div>
     <!-- ///////////////////////////////////////////////// hero__contenu -->
     <div class="hero__contenu global">
