@@ -10,8 +10,19 @@
         min-height : 100vh;
         width : 100%;
         z-index: -1;
+        opacity: 0%;
+        &--active{ //.hero__carrousel--active
+            opacity: 100%;
+        }
     }
-}
-&__radio{
-
+    &__radio{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        &__input{
+    
+        }
+    }
 }
