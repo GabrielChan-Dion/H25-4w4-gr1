@@ -23,5 +23,15 @@
             }
         });
     });
+    (function () {
+        const hero__radio__input = document.querySelectorAll(".hero__radio__input");
+        let currentIndex = Array.from(hero__radio__input).findIndex(input => input.checked);
+    
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % hero__radio__input.length;
+            hero__radio__input[currentIndex].checked = true;
+            hero__radio__input[currentIndex].dispatchEvent(new Event("change"));
+        }, 5000);
+    })();
     document.querySelector(".hero__radio__input:checked")?.dispatchEvent(new Event("change"));
 })();
