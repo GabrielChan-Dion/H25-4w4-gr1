@@ -1,6 +1,7 @@
 .hero{
     min-height: 100vh;
     position : relative;
+    color: $couleur__highlight;
     &__carrousel {
         top:0;
         left:0;
@@ -18,12 +19,47 @@
     }
     &__radio{
         position: absolute;
+        left: 45%;
+        right: 50%;
         bottom: 0;
         display: flex;
         justify-content: center;
         gap: 2rem;
-        &__input{
+        padding: 0.5em;
+    }
+    &__contenu{
+        display: flex;
+        flex-direction: column;
+    }
     
-        }
+    font-size: 1.5em;
+    &__titre{
+       font-size: 5em; 
+    }
+    &__description{
+        color: $couleur__highlight;
+    }
+    &__icone-app{
+        margin-top: 1em;
+        display: flex;
+        justify-content: space-between;
+        width: 10em;
+        background-color:$couleur__highlight;
+        padding: 0.25em;
+        border-radius: 1em;
+    }
+    &__bouton{
+        margin-top: 1em;
+        width: 10em;
+        padding: 0.25em;
+        font-weight: bold;
+        font-size: 1em;
+        background-color: $couleur__highlight;
+        border-radius: 0.5em;
+        border: none;
+    }
+    &__courriel{
+        width: 30em;
+        padding: 0.15em;
     }
 }
