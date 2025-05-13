@@ -1,6 +1,7 @@
 <footer>
     <?php
     $footer_mission = get_theme_mod('footer_mission', 'Default Title');
+    vague($footer_couleur_arriere)
     
     ?>
     <div class="piedpage global">

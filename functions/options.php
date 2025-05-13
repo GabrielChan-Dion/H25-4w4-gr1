@@ -3,7 +3,7 @@
  * Pour l'ajout d'options à notre thème
  */
 function mon_theme_supports() {
-  
+
   add_theme_support('title-tag');
   add_theme_support('menus');
   add_theme_support('post-thumbnails');

@@ -2,13 +2,15 @@
     console.log("vive Javascript")
     
         let categoryId = 3; // Remplacez par l'ID de la catégorie souhaitée
+        //const domaine = "http://localhost/4w4-gr1"
         const domaine = window.location.href
         //const apiUrl = `${domaine}wp-json/wp/v2/posts?categories=${categoryId}`;
         let apiUrl =  `${domaine}wp-json/wp/v2/posts?categories=${categoryId}`;
         const categorie__ul__li = document.querySelectorAll(".categorie__ul__li")
         console.log("categorie__ul__li.length", categorie__ul__li.length)
+        mon_fetch(apiUrl)
         categorie__ul__li.forEach(li => {
-            li.addEventListener("click",function(){
+            li.addEventListener("mousedown",function(){
                console.log(li.dataset.id) 
                categoryId = li.dataset.id
                apiUrl = `${domaine}wp-json/wp/v2/posts?categories=${categoryId}`;
@@ -17,9 +19,9 @@
             })
             
         })
-        function mon_fetch(apiUrl){
 
-        
+        function mon_fetch(apiUrl)
+        {
         fetch(apiUrl)
             .then(response => response.json())
             .then(data => {
@@ -31,12 +33,13 @@
                     articleElement.innerHTML = `
                         <h3>${article.title.rendered}</h3>
                         <p>${article.excerpt.rendered}</p>
+
                         <a href="${article.link}">Lire plus</a>
                     `;
                     destinationList .appendChild(articleElement);
                 });
             })
             .catch(error => console.error('Erreur lors de la récupération des articles:', error));
+        }
 
-            }
 })()
