@@ -1,20 +1,27 @@
 <?php  
 $hero_auteur = get_theme_mod('hero_auteur', 'Default Title'); 
-
-for ($k=0; $k<3; $k++){
+$image_count = get_theme_mod('number_of_hero_images', 3);
+for ($k = 0; $k < $image_count; $k++){
 $hero_background[$k] = get_theme_mod('hero_background_' . $k, 'Default Title'); 
 }
 ?>
 <section class="hero">
     <!-- ///////////////////////////////////////////////// hero__carrousel -->
-    <div class="hero__carrousel"  style="background-image: url('<?php echo $hero_background[0] ?>');" ></div>    
-    <div class="hero__carrousel"  style="background-image: url('<?php echo $hero_background[1] ?>');" ></div> 
-    <div class="hero__carrousel"  style="background-image: url('<?php echo $hero_background[2] ?>');" ></div> 
+    <?php foreach ($hero_background as $index => $image_url) : ?>
+    <div class="hero__carrousel" style="background-image: url('<?php echo esc_url($image_url); ?>');"></div>
+    <?php endforeach; ?>
     <div class="hero__radio">
-        <input class="hero__radio__input" type="radio" name="carrousel" data-id_carrousel="0" checked="checked">
-        <input class="hero__radio__input" type="radio" name="carrousel" data-id_carrousel="1">
-        <input class="hero__radio__input" type="radio" name="carrousel" data-id_carrousel="2">
+        <?php foreach ($hero_background as $index => $image_url) : ?>
+            <input
+                class="hero__radio__input"
+                type="radio"
+                name="carrousel"
+                data-id_carrousel="<?php echo $index; ?>"
+                <?php echo $index === 0 ? 'checked="checked"' : ''; ?>
+            >
+        <?php endforeach; ?>
     </div>
+
     <!-- ///////////////////////////////////////////////// hero__contenu -->
     <div class="hero__contenu global">
         <h1 class="hero__titre">

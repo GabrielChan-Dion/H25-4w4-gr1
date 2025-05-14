@@ -22,17 +22,44 @@ $wp_customize->add_control('hero_auteur', array(
 ));
 
 ////////////////////////////////////////////////// image en background de la zone hero
-for ($k=0; $k<3; $k++)
-{
-  $wp_customize->add_setting('hero_background_' . $k, array(
-    'default' => '',
-    'sanitize_callback' => 'esc_url_raw',
-  ));
+$default_count = 3;
+$image_count = get_theme_mod('number_of_hero_images', 3);
+$hero_background = [];
+// Limites sur le nombres d'images
+$max_controls = is_customize_preview() ? $image_count : $default_count;
+$max_controls = max(1, min(10, $max_controls));
+
+for ($i = 0; $i < $image_count; $i++) {
+    $img = get_theme_mod('hero_background_' . $i);
+    if ($img) {
+        $hero_background[] = $img;
+    }
+}
+
+for ($k = 0; $k < $max_controls; $k++) {
+    $wp_customize->add_setting('hero_background_' . $k, array(
+        'default'           => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+$wp_customize->add_setting('number_of_hero_images', array(
+    'default'           => 3,
+    'sanitize_callback' => 'absint',
+));
+$wp_customize->add_control('number_of_hero_images', array(
+    'label'       => __('Number of Hero Background Images', 'theme_31w'),
+    'section'     => 'hero_section',
+    'type'        => 'number',
+    'input_attrs' => array(
+        'min' => 1,
+        'max' => 10,
+    ),
+));
   
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background_' . $k, array(
-    'label' => __('Image en background ' . ($k+1) , 'theme_31w'),
-    'section' => 'hero_section',
-  )));
+   $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background_' . $k, array(
+        'label'   => __('Image en background ' . ($k + 1), 'theme_31w'),
+        'section' => 'hero_section',
+    )));
 
 }
 
