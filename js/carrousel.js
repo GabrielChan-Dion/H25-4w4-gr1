@@ -1,24 +1,27 @@
 (function () {
     let hero__radio__input = document.querySelectorAll(".hero__radio__input");
-    console.log("hero__radio__input.length = ", hero__radio__input.length)
     let hero__carrousels = document.querySelectorAll(".hero__carrousel");
+    const hero__contenu_anim = document.querySelector(".hero__contenu__anim");
 
-    hero__radio__input.forEach(elm=>{
-        console.log("elm.id_carrousel = ",elm.dataset.id_carrousel)
-    })
+
 
     hero__radio__input.forEach(elm => {
         elm.addEventListener('change', () => {
             if (elm.checked) {
-                const index = elm.dataset.id_carrousel;
+                const index = parseInt(elm.dataset.id_carrousel);
 
                 hero__carrousels.forEach(carrousel => {
                     carrousel.classList.remove("hero__carrousel--active");
                 });
-
                 const target = hero__carrousels[index];
                 if (target) {
                     target.classList.add("hero__carrousel--active");
+                }
+                
+                if (hero__contenu_anim) {
+                    hero__contenu_anim.classList.remove("animate");
+                    void hero__contenu_anim.offsetWidth; // Force reflow
+                    hero__contenu_anim.classList.add("animate");
                 }
             }
         });
