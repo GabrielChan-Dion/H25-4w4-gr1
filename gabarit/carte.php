@@ -13,7 +13,22 @@
         <h2 class="carte__titre"><?php the_title(); ?></h2>
         <p class="carte__description"><?php echo wp_trim_words(get_the_excerpt(), 20, "...") ; ?></p>
         <a class="carte__bouton carte__bouton--actif"  href="<?php the_permalink(); ?>">Suite</a>
-            <?php the_category()?>
+            <?php //Affiche les category
+            $categories = get_the_category();
+            if ($categories) {
+                $output = array();
+
+                foreach ($categories as $category) {
+                    if ($category->slug === 'populaire') {
+                        continue; // enlève la catégory populaire
+                    }
+
+                    $output[] = '<a href="' . esc_url(get_category_link($category->term_id)) . '">' . esc_html($category->name) . '</a>';
+                }
+
+                echo implode(', ', $output);
+            }
+            ?>
         <p>Température minimum&nbsp;<?php  echo the_field ('temperature_minimum'); ?>&#xB0;C</p>
         <p>Température maximum&nbsp;<?php echo the_field ('temperature_maximum'); ?>&#xB0;C</p>
         <p>Température moyenne&nbsp;<?php echo the_field ('temperature_moyenne'); ?>&#xB0;C</p>
