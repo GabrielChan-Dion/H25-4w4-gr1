@@ -415,6 +415,12 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+.piedpage__image {
+  margin-top: 0.5em;
+  border: 3px solid #98d2ba;
+  width: 15vw;
+  height: auto;
+}
 .piedpage__s1 {
   width: 90vw;
   display: flex;

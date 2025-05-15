@@ -94,7 +94,7 @@ $wp_customize->add_control('footer_mission', array(
   'section' => 'footer_section',
   'type' => 'textarea',
 ));
-
+//////////////////////////////////////////////////////////// Footer Wave
 $wp_customize->add_setting('footer_wave_couleur', array(
   'default' => '',
   'sanitize_callback' => 'esc_url_raw',
@@ -104,7 +104,16 @@ $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer
   'label' => __('Couleur de la vague', 'theme_31w'),
   'section' => 'footer_section',
 )));
+//////////////////////////////////////////////////////////// Footer image
+$wp_customize->add_setting('footer_image', array(
+  'default' => '',
+  'sanitize_callback' => 'esc_url_raw',
+));
 
+$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'footer_image', array(
+  'label' => __('Image du footer', 'theme_31w'),
+  'section' => 'footer_section',
+)));
 //////////////////////////////////////////////////////// Section 404
 $wp_customize->add_section('Page404_section', array(
   'title' => __('Section 404', 'theme_31w'),

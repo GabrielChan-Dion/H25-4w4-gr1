@@ -2,6 +2,7 @@
     <?php
     $footer_mission = get_theme_mod('footer_mission', 'Default Title');
     $footer_wave_couleur = get_theme_mod('footer_wave_couleur', '');
+    $footer_image = get_theme_mod('footer_image', "");
     vague($footer_wave_couleur);
     
     ?>
@@ -31,6 +32,7 @@
             </div>
             <div class="piedpage__s1__description">
                 <?php echo $footer_mission; ?>
+                <img class="piedpage__image" src="<?php echo $footer_image?>" alt="">
             </div>
             
         </section>
