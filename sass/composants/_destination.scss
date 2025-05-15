@@ -1,0 +1,26 @@
+.destination{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__titre{
+        text-align: center;
+        border-bottom: 2px solid $couleur__highlight;
+        padding-bottom: 1em;
+    }
+    &__list{
+        border: solid $couleur__highlight 1px;
+    }
+    div{
+        margin-bottom: 1em;
+        width: 80vw;
+        padding: 1em;
+    }
+    h3{
+        width: 75vw;
+        font-size: 1.5em;
+        border-bottom: $couleur__highlight 2px solid;
+    }
+    p{
+        font-size: 1.2em;
+    }
+}

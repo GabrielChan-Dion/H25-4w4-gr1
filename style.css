@@ -301,6 +301,33 @@ Le composant .carte
   cursor: pointer;
 }
 
+.destination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.destination__titre {
+  text-align: center;
+  border-bottom: 2px solid #98d2ba;
+  padding-bottom: 1em;
+}
+.destination__list {
+  border: solid #98d2ba 1px;
+}
+.destination div {
+  margin-bottom: 1em;
+  width: 80vw;
+  padding: 1em;
+}
+.destination h3 {
+  width: 75vw;
+  font-size: 1.5em;
+  border-bottom: #98d2ba 2px solid;
+}
+.destination p {
+  font-size: 1.2em;
+}
+
 /* /////////////////////////
 Layout 
 /////////////////////////// */

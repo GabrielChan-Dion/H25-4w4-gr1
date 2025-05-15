@@ -22,8 +22,11 @@
 <!-- //////////////////////////////////// section destination REST-API -->
     <?php categories_liste("destination"); ?>
     <section class="destination">
-        <h2 class="destination__titre">Articles de la catégorie</h2>
-        <div class="destination__list"></div>
+        <div class="destination__category">
+            <h2 class="destination__titre">Nos autres destination!</h2>
+            <div class="destination__list"></div>
+        </div>
+        
     </section>
     <?php get_footer(); ?>
 </body>
