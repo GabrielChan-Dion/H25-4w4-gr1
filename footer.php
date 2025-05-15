@@ -1,7 +1,8 @@
 <footer>
     <?php
     $footer_mission = get_theme_mod('footer_mission', 'Default Title');
-    vague($footer_couleur_arriere)
+    $footer_wave_couleur = get_theme_mod('footer_wave_couleur', '');
+    vague($footer_wave_couleur);
     
     ?>
     <div class="piedpage global">

@@ -94,6 +94,17 @@ $wp_customize->add_control('footer_mission', array(
   'section' => 'footer_section',
   'type' => 'textarea',
 ));
+
+$wp_customize->add_setting('footer_wave_couleur', array(
+  'default' => '',
+  'sanitize_callback' => 'esc_url_raw',
+));
+
+$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_wave_couleur', array(
+  'label' => __('Couleur de la vague', 'theme_31w'),
+  'section' => 'footer_section',
+)));
+
 //////////////////////////////////////////////////////// Section 404
 $wp_customize->add_section('Page404_section', array(
   'title' => __('Section 404', 'theme_31w'),
