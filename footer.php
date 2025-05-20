@@ -5,6 +5,11 @@
     $footer_image = get_theme_mod('footer_image', "");
     vague($footer_wave_couleur);
     
+    //Icones sociaux
+    for ( $i = 1; $i <= 3; $i++ ){
+    $image_url = get_theme_mod( "image_link_image_$i" );
+    $link_url  = get_theme_mod( "image_link_url_$i" );
+}
     ?>
     <div class="piedpage global">
         <section class="piedpage__s1">
@@ -24,21 +29,19 @@
                     <?php get_search_form();   ?>
                 </div>
                 <div class="hero__icone-app">
-                <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000000" width="20" height="20">
-                <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000000" width="20" height="20">
-                <img src="https://s2.svgbox.net/social.svg?ic=paypal&color=000000" width="20" height="20">
-                <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=000000" width="20" height="20">
+                 <?php 
+                if ( $image_url && $link_url ) ?>
+                <a href="<?php echo esc_url( $link_url ); ?>">
+                    <img src="<?php echo esc_url( $image_url ); ?>" alt="Image <?php echo $i; ?>" />
+                </a>
             </div>
             </div>
             <div class="piedpage__s1__description">
                 <?php echo $footer_mission; ?>
-                <img class="piedpage__image" src="<?php echo $footer_image?>" alt="">
+                <img src="<?php echo $footer_image?>" alt="" width="100" height="auto">
             </div>
             
         </section>
-        <section class="piedpage__s2"></section>
-      
-        
     </div>
 </footer>
 <?php wp_footer() ?>

@@ -78,7 +78,6 @@ $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'hero_c
 )));
 
 //////////////////////////////////////////////////////// Section Icones sociaux
-function mytheme_customize_register( $wp_customize ) {
     $wp_customize->add_section( 'image_link_section', array(
         'title'    => __( 'Clickable Image Links', 'theme_31w' ),
         'priority' => 30,
@@ -105,7 +104,6 @@ function mytheme_customize_register( $wp_customize ) {
             'section'  => 'image_link_section',
             'type'     => 'url',
         ) );
-}
 }
 
 //////////////////////////////////////////////////////// Nouvelle section footer
