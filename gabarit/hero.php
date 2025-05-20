@@ -4,14 +4,7 @@ $hero_auteur = get_theme_mod('hero_auteur', 'Default Title');
 $image_count = get_theme_mod('number_of_hero_images', 3);
 for ($k = 0; $k < $image_count; $k++){
 $hero_background[$k] = get_theme_mod('hero_background_' . $k, 'Default Title'); 
-}
-
-//Icones sociaux
-for ( $i = 1; $i <= 3; $i++ ){
-    $image_url = get_theme_mod( "image_link_image_$i" );
-    $link_url  = get_theme_mod( "image_link_url_$i" );
-}
-      
+} 
 ?>
 <section class="hero">
     <!-- ///////////////////////////////////////////////// hero__carrousel -->
@@ -46,11 +39,17 @@ for ( $i = 1; $i <= 3; $i++ ){
                 Inscription
             </button>
             <div class="hero__icone-app">
-                <?php 
-                if ( $image_url && $link_url ) ?>
-                <a href="<?php echo esc_url( $link_url ); ?>">
-                    <img src="<?php echo esc_url( $image_url ); ?>" alt="Image <?php echo $i; ?>" />
-                </a>
+                 <?php for ( $i = 1; $i <= 3; $i++ ) {
+                $image_url = get_theme_mod( "image_link_image_$i" );
+                $link_url  = get_theme_mod( "image_link_url_$i" );
+
+                if ( $image_url && $link_url ) { ?>
+                    <a href="<?php echo esc_url( $link_url ); ?>">
+                        <img src="<?php echo esc_url( $image_url ); ?>" alt="Image <?php echo $i; ?>" />
+                    </a>
+            <?php }
+            } ?>
+                
             </div>
             <p>Auteur:<?php echo $hero_auteur;  ?></p>
         </div>

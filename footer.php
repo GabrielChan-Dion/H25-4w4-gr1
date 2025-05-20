@@ -4,12 +4,6 @@
     $footer_wave_couleur = get_theme_mod('footer_wave_couleur', '');
     $footer_image = get_theme_mod('footer_image', "");
     vague($footer_wave_couleur);
-    
-    //Icones sociaux
-for ( $i = 1; $i <= 3; $i++ ){
-    $image_url = get_theme_mod( "image_link_image_$i" );
-    $link_url  = get_theme_mod( "image_link_url_$i" );
-}
     ?>
     <div class="piedpage global">
         <section class="piedpage__s1">
@@ -29,11 +23,16 @@ for ( $i = 1; $i <= 3; $i++ ){
                     <?php get_search_form();   ?>
                 </div>
                 <div class="hero__icone-app">
-                <?php 
-                if ( $image_url && $link_url ) ?>
-                <a href="<?php echo esc_url( $link_url ); ?>">
-                    <img src="<?php echo esc_url( $image_url ); ?>" alt="Image <?php echo $i; ?>" />
-                </a>
+                <?php for ( $i = 1; $i <= 3; $i++ ) {
+                $image_url = get_theme_mod( "image_link_image_$i" );
+                $link_url  = get_theme_mod( "image_link_url_$i" );
+
+                if ( $image_url && $link_url ) { ?>
+                    <a href="<?php echo esc_url( $link_url ); ?>">
+                        <img src="<?php echo esc_url( $image_url ); ?>" alt="Image <?php echo $i; ?>" />
+                    </a>
+            <?php }
+            } ?>
             </div>
             </div>
             <div class="piedpage__s1__description">
