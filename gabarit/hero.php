@@ -1,9 +1,17 @@
 <?php  
 $hero_auteur = get_theme_mod('hero_auteur', 'Default Title'); 
+//Carrousel
 $image_count = get_theme_mod('number_of_hero_images', 3);
 for ($k = 0; $k < $image_count; $k++){
 $hero_background[$k] = get_theme_mod('hero_background_' . $k, 'Default Title'); 
 }
+
+//Icones sociaux
+for ( $i = 1; $i <= 3; $i++ ){
+    $image_url = get_theme_mod( "image_link_image_$i" );
+    $link_url  = get_theme_mod( "image_link_url_$i" );
+}
+      
 ?>
 <section class="hero">
     <!-- ///////////////////////////////////////////////// hero__carrousel -->
@@ -38,10 +46,11 @@ $hero_background[$k] = get_theme_mod('hero_background_' . $k, 'Default Title');
                 Inscription
             </button>
             <div class="hero__icone-app">
-                <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000000" width="20" height="20">
-                <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000000" width="20" height="20">
-                <img src="https://s2.svgbox.net/social.svg?ic=paypal&color=000000" width="20" height="20">
-                <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=000000" width="20" height="20">
+                <?php 
+                if ( $image_url && $link_url ) ?>
+                <a href="<?php echo esc_url( $link_url ); ?>">
+                    <img src="<?php echo esc_url( $image_url ); ?>" alt="Image <?php echo $i; ?>" />
+                </a>
             </div>
             <p>Auteur:<?php echo $hero_auteur;  ?></p>
         </div>

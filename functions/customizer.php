@@ -77,6 +77,37 @@ $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'hero_c
   'section' => 'hero_section',
 )));
 
+//////////////////////////////////////////////////////// Section Icones sociaux
+function mytheme_customize_register( $wp_customize ) {
+    $wp_customize->add_section( 'image_link_section', array(
+        'title'    => __( 'Clickable Image Links', 'theme_31w' ),
+        'priority' => 30,
+    ) );
+
+    for ( $i = 1; $i <= 3; $i++ ) {
+        $wp_customize->add_setting( "image_link_image_$i", array(
+            'sanitize_callback' => 'esc_url_raw',
+        ) );
+
+        $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, "image_link_image_$i", array(
+            'label'    => __( "Image $i", 'theme_31w' ),
+            'section'  => 'image_link_section',
+            'settings' => "image_link_image_$i",
+        ) ) );
+
+        // Link
+        $wp_customize->add_setting( "image_link_url_$i", array(
+            'sanitize_callback' => 'esc_url_raw',
+        ) );
+
+        $wp_customize->add_control( "image_link_url_$i", array(
+            'label'    => __( "Liens de l'image $i", 'theme_31w' ),
+            'section'  => 'image_link_section',
+            'type'     => 'url',
+        ) );
+}
+}
+
 //////////////////////////////////////////////////////// Nouvelle section footer
 
   $wp_customize->add_section('footer_section', array(
