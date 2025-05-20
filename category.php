@@ -13,6 +13,14 @@
                 <?php get_template_part("gabarit/carte"); ?>
         <?php endwhile; endif; ?>        
         </div>
+        <!-- //////////////////////////////////// section destination REST-API -->
+    <?php categories_liste("destination"); ?>
+    <section class="destination">
+        <div class="destination__category">
+            <div class="destination__list"></div>
+        </div>
+        
+    </section>
     </section>
     <?php get_footer(); ?>
 </body>
