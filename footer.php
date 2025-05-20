@@ -6,7 +6,7 @@
     vague($footer_wave_couleur);
     
     //Icones sociaux
-    for ( $i = 1; $i <= 3; $i++ ){
+for ( $i = 1; $i <= 3; $i++ ){
     $image_url = get_theme_mod( "image_link_image_$i" );
     $link_url  = get_theme_mod( "image_link_url_$i" );
 }
@@ -29,7 +29,7 @@
                     <?php get_search_form();   ?>
                 </div>
                 <div class="hero__icone-app">
-                 <?php 
+                <?php 
                 if ( $image_url && $link_url ) ?>
                 <a href="<?php echo esc_url( $link_url ); ?>">
                     <img src="<?php echo esc_url( $image_url ); ?>" alt="Image <?php echo $i; ?>" />
@@ -38,7 +38,7 @@
             </div>
             <div class="piedpage__s1__description">
                 <?php echo $footer_mission; ?>
-                <img src="<?php echo $footer_image?>" alt="" width="100" height="auto">
+                <img class="piedpage__image" src="<?php echo $footer_image?>" alt="">
             </div>
             
         </section>
