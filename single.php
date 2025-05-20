@@ -1,8 +1,4 @@
 <?php
-/**
- *  index.php est le modèle par défaut
- *  si aucun modèle peut satisfaire la requête http dans ce cas c'est index.php qui affichera le contenu de la page
- */
 $hero_auteur = get_theme_mod('hero_auteur', 'Default Title'); 
 ?>
 <?php get_header() ?>

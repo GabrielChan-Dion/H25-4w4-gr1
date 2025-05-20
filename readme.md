@@ -1,8 +1,7 @@
 # TP2
 ## Cours: 4W4-Conception d'interface et développement Web
-
-Créer un site de voyage-
-Ajout de la page 404
+Nature&Voyage
+Création d'un site-web de voyage
 
 
 Liens:
