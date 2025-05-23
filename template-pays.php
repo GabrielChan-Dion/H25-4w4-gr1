@@ -2,6 +2,8 @@
 /*
 Template Name: pays
 */
+
+$template_pays_info = get_theme_mod('template_pays_info', 'Default Title');
 ?>
 <?php get_header() ?>
 
@@ -15,6 +17,7 @@ Template Name: pays
             de villes vibrantes d’histoire et de modernité, ou de rencontres culturelles authentiques, 
             il y a un pays fait pour vous.
         </p>
+        <h2>Date du prochain Évènement: <?php echo $template_pays_info?></h2>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <?php if (in_category('galerie')) {
                 the_content();

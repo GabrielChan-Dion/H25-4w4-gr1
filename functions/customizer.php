@@ -191,7 +191,22 @@ $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'Page40
   'label' => __('Couleur du texte', 'theme_31w'),
   'section' => 'Page404_section',
 )));
+//////////////////////////////////////////////////////// Section page
+$wp_customize->add_section('template_pays', array(
+  'title' => __('template_pays', 'theme_31w'),
+  'priority' => 30,
+));
 
+$wp_customize->add_setting('template_pays_info', array(
+  'default' => __('Date: 01/01/2025', 'theme_31w'),
+  'sanitize_callback' => 'sanitize_text_field'
+));
+
+$wp_customize->add_control('template_pays_info', array(
+  'label' => __('Info de événement', 'theme_31w'),
+  'section' => 'template_pays',
+  'type' => 'textarea',
+));
 
 }
 
