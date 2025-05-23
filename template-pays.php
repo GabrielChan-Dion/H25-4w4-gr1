@@ -23,11 +23,13 @@ $template_pays_info = get_theme_mod('template_pays_info', 'Default Title');
                 the_content();
             } ?>
         <?php endwhile; endif; ?>
+        <?php vague($couleur_bas);?>
     </div>
-    <?php vague($couleur_bas);?>
+    
 </section>
 
  <!-- ////////////////// section Pays REST-API -->   
+  <?php categories_liste("destination"); ?>
 <section class="pays__menu">
 <ul class="categorie__ul"></ul>
 <section class="contenu-destinations">
