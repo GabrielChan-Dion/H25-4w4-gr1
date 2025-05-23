@@ -2,6 +2,9 @@
 ## Cours: 4W4-Conception d'interface et développement Web
 Nature&Voyage
 Création d'un site-web de voyage
+Épreuve Finale:
+Ajout de la template Page: Pays
+Création d'un menu pays avec Rest-Api
 
 
 Liens:
