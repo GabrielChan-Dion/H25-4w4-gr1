@@ -21,7 +21,7 @@ Template Name: pays
             } ?>
         <?php endwhile; endif; ?>
     </div>
-            <?php vague($couleur_haut);?>
+        <?php vague($couleur_bas);?>
 
 </section>
 

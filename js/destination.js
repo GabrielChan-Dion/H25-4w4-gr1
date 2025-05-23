@@ -1,8 +1,13 @@
 (function(){
-    console.log("vive Javascript")
-    let categoryId = 3; // Remplacez par l'ID de la catégorie souhaitée
-    // permet de récupérer l'adrsse de la page d'accueil contenu dabs la balise « base »
+
+    let categoryId = 3; 
     const domaine = document.querySelector('base').getAttribute('href')
+    const boutonPays = document.getElementById("bouton-pays");
+    const listePays = [ //Tableau des pays
+        "France", "États-Unis", "Canada", "Argentine", "Chili",
+        "Belgique", "Maroc", "Mexique", "Japon", "Italie",
+        "Islande", "Chine", "Grèce", "Suisse"
+    ];
     mon_fetch(categoryId)
     const categorie__ul__li = document.querySelectorAll(".categorie__ul__li")
     console.log("categorie__ul__li.length", categorie__ul__li.length)
