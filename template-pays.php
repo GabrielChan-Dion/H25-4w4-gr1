@@ -7,7 +7,7 @@ $template_pays_info = get_theme_mod('template_pays_info', 'Default Title');
 ?>
 <?php get_header() ?>
 
-<section class="populaire">
+<section>
     <div class="pays">
         <h1 class="pays__titre">Les plus beaux Pays</h1>
         <p class="pays__description">

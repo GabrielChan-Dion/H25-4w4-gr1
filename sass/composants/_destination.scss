@@ -24,6 +24,29 @@
         font-size: 1.2em;
     }
 }
+.pays{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $couleur_haut;
+    &__titre{
+        font-size: 1.5em;
+        border-bottom: 3px solid $couleur__highlight;
+    }
+    &__description{
+        width: 70vw;
+        font-size: 1.2em;
+    }
+    &__menu{
+        background-color: $couleur_haut;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 
 .categorie__ul {
   list-style: none;
