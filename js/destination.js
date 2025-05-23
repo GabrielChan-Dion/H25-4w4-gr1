@@ -28,14 +28,14 @@
 
     if (boutonPays) {
         boutonPays.addEventListener("click", function () {
-            menuCategorie.innerHTML = ""; // efface les anciennes entrées
+            menuCategorie.innerHTML = ""; 
             listePays.forEach(nomPays => {
                 const element = document.createElement("li");
                 element.textContent = nomPays;
                 element.classList.add("categorie__ul__li");
                 element.dataset.nom = nomPays;
                 element.addEventListener("click", () => {
-                    mon_fetch(nomPays, "search"); // 🔧 MODIFIÉ : "search"
+                    mon_fetch(nomPays, "search");
                 });
                 menuCategorie.appendChild(element);
             });
@@ -44,7 +44,7 @@
         function mon_fetch(valeur, type) {
         let apiUrl = "";
 
-        // 🔧 MODIFIÉ : utilise "search" ou "categories"
+        
         if (type === "categories") {
             apiUrl = `${domaine}/wp-json/wp/v2/posts?categories=${valeur}`;
         } else {
