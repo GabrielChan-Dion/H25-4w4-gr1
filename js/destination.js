@@ -28,14 +28,21 @@
 
     if (boutonPays) {
         boutonPays.addEventListener("click", function () {
+
             menuCategorie.innerHTML = "";
+            menuCategorie.innerHTML = ""; 
+
             listePays.forEach(nomPays => {
                 const element = document.createElement("li");
                 element.textContent = nomPays;
                 element.classList.add("categorie__ul__li");
                 element.dataset.nom = nomPays;
                 element.addEventListener("click", () => {
-                    mon_fetch(nomPays, "search"); à
+
+                    mon_fetch(nomPays, "search");
+
+                    mon_fetch(nomPays, "search");
+
                 });
                 menuCategorie.appendChild(element);
             });
