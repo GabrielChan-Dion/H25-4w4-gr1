@@ -28,9 +28,7 @@
 
     if (boutonPays) {
         boutonPays.addEventListener("click", function () {
-
             menuCategorie.innerHTML = "";
-            menuCategorie.innerHTML = ""; 
 
             listePays.forEach(nomPays => {
                 const element = document.createElement("li");
@@ -40,9 +38,6 @@
                 element.addEventListener("click", () => {
 
                     mon_fetch(nomPays, "search");
-
-                    mon_fetch(nomPays, "search");
-
                 });
                 menuCategorie.appendChild(element);
             });
