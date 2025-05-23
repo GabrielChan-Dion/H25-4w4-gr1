@@ -11,11 +11,12 @@
     const categorie__ul__li = document.querySelectorAll(".categorie__ul__li")
 
     categorie__ul__li.forEach(li => {
-        li.addEventListener("mousedown",function(){
-            console.log(li.dataset.id) 
-            categoryId = li.dataset.id
-            mon_fetch(categoryId, "categories");
-        })
+    li.addEventListener("mousedown", function () {
+        console.log(li.dataset.id);
+        categoryId = li.dataset.id;
+        document.getElementById("titre-pays").textContent = "Destinations : " + li.textContent;
+        mon_fetch(categoryId);
+    })
     })
 
      const listePays = [ //Tableau des pays

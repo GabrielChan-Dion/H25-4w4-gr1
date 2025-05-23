@@ -24,3 +24,24 @@
         font-size: 1.2em;
     }
 }
+
+.categorie__ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.categorie__ul__li {
+  background-color: $couleur__highlight;
+  color: white;
+  padding: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.categorie__ul__li:hover {
+  background-color: #0056b3;
+}

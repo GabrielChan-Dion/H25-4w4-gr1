@@ -21,7 +21,17 @@ Template Name: pays
             } ?>
         <?php endwhile; endif; ?>
     </div>
-        <?php vague($couleur_bas);?>
+    <?php vague($couleur_bas);?>
+</section>
+
+ <!-- ////////////////// section Pays REST-API -->   
+<section class="pays__menu">
+<ul class="categorie__ul"></ul>
+<section class="contenu-destinations">
+  <h2 id="titre-pays">Destinations : </h2>
+  <div class="destination__list">
+  </div>
+</section>
 
 </section>
 
